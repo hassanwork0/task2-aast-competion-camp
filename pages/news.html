@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/topbar_style.css">
+    <link rel="stylesheet" href="../styles/news_style.css">
+    <link rel="stylesheet" href="../styles/footer_style.css">
+    <script src="../scripts/loaders/add_footer.js"></script>
+    <script src="../scripts/loaders/load_top_bar.js"></script>
+    <script src="../scripts/api/news.js"></script>
+    <title>News & Events - Artemis II</title>
+</head>
+
+<body onload="loadTopBar('News'); loadNews(20);getFooter()">
+    <header class="top_bar" id="top_bar"></header>
+
+    <main class="news_container">
+<!-- 1) Featured News Row - 3 Big News (Static) -->
+<section class="featured_news_section">
+    <h2 class="section_title">Featured Stories</h2>
+    <div class="featured_grid">
+        <!-- Big Main News Card -->
+        <div class="big_news_card">
+            <img src="../assets/orion.jpg" alt="Artemis II Mission" class="big_news_image" onerror="this.src='../assets/nasa_logo.svg'">
+            <div class="big_news_content">
+                <span class="big_news_category">Mission</span>
+                <h2 class="big_news_title">Artemis II: Returning Humanity to the Moon</h2>
+                <p class="big_news_excerpt">After 50 years, NASA is sending astronauts back to the Moon. The Artemis II mission will fly four astronauts on a lunar flyby aboard the Orion spacecraft, paving the way for future lunar surface landings.</p>
+                <span class="big_news_date">Launch: November 2026</span>
+            </div>
+        </div>
+        
+        <!-- Column of Two Smaller News Cards -->
+        <div class="small_news_column">
+            <!-- Small News Card 1 -->
+            <div class="small_news_card">
+                <img src="../assets/crew_photos/Reid Wiseman.webp" alt="Artemis II Crew" class="small_news_image" onerror="this.src='../assets/nasa_logo.svg'">
+                <div class="small_news_content">
+                    <span class="small_news_category">Crew</span>
+                    <h3 class="small_news_title">Meet the Artemis II Astronauts</h3>
+                    <p class="small_news_excerpt">Commander Reid Wiseman, Pilot Victor Glover, Mission Specialists Christina Koch and Jeremy Hansen are ready for their historic lunar mission...</p>
+                    <span class="small_news_date">April 15, 2026</span>
+                </div>
+            </div>
+            
+            <!-- Small News Card 2 -->
+            <div class="small_news_card">
+                <img src="../assets/orion.jpg" alt="Orion Spacecraft" class="small_news_image" onerror="this.src='../assets/nasa_logo.svg'">
+                <div class="small_news_content">
+                    <span class="small_news_category">Spacecraft</span>
+                    <h3 class="small_news_title">Orion Spacecraft Ready for Launch</h3>
+                    <p class="small_news_excerpt">NASA confirms Orion is fully assembled and passing all pre-flight checks with outstanding performance metrics across all systems...</p>
+                    <span class="small_news_date">April 12, 2026</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- 2) News Archive Column - 20 News Cards -->
+        <section class="news_section">
+            <h2 class="section_title">Latest News</h2>
+            <div class="news_grid" id="newsGrid">
+                <!-- Dynamically loaded news cards -->
+            </div>
+            <div class="button_container">
+                <button class="view_more_btn" onclick="window.location.href='news.html'">View More News →</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

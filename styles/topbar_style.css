@@ -1,0 +1,38 @@
+.top_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(26, 31, 42, 0.3);
+
+    font-family: 'logo_font';
+}
+
+.top_bar_item{
+    cursor: pointer;
+}
+.top_bar_item img{
+    width: 10vh;
+}
+
+
+/* search container red rectangle */
+.search_container{
+    cursor: pointer;
+    display: flex;
+    background-color: rgba(255, 77, 0, 0.3);
+    width: 20vh;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.current {
+    color:#FF4D00;
+}
+@media (max-width: 600px) {
+    .top_bar{
+        flex-direction: column;
+    }
+}
+

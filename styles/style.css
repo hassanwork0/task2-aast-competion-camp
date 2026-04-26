@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0B0E17 0%, #172656 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section_title {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section_title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #FF4D00;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Optional: Keep hover effect for better UX */
+a:hover {
+    color: #FF4D00;
+}
+@font-face {
+    font-family: 'logo_font';
+    src: url('../assets/fonts/logo_font.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'main_font';
+    src: url('../assets/fonts/main_font.ttf') format('opentype');
+}

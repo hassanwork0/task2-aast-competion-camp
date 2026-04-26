@@ -1,0 +1,136 @@
+/* about_style.css - About Us Page */
+
+.about_container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0B0E17 0%, #172656 100%);
+}
+
+.about_content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about_title {
+    font-family: 'logo_font', 'main_font', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FF4D00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.about_subtitle {
+    font-family: 'main_font', sans-serif;
+    font-size: 1.5rem;
+    color: #00BFFF;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.about_text {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.about_text p {
+    font-family: 'main_font', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #A0AABF;
+    margin-bottom: 25px;
+}
+
+.info_grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.info_card {
+    background: #1A1F2A;
+    border-radius: 16px;
+    padding: 30px 40px;
+    min-width: 180px;
+    text-align: center;
+    border: 1px solid rgba(255, 77, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.info_card:hover {
+    transform: translateY(-5px);
+    border-color: #FF4D00;
+    box-shadow: 0 10px 30px rgba(255, 77, 0, 0.2);
+}
+
+.info_label {
+    font-family: 'main_font', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #A0AABF;
+    margin-bottom: 15px;
+}
+
+.info_value {
+    font-family: 'logo_font', 'main_font', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.status_operational {
+    color: #00FF88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about_title {
+        font-size: 2.2rem;
+    }
+    
+    .about_subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .about_text p {
+        font-size: 1rem;
+    }
+    
+    .info_grid {
+        gap: 20px;
+    }
+    
+    .info_card {
+        padding: 20px 30px;
+        min-width: 140px;
+    }
+    
+    .info_value {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_title {
+        font-size: 1.8rem;
+    }
+    
+    .about_subtitle {
+        font-size: 1rem;
+    }
+    
+    .info_card {
+        width: 100%;
+    }
+}
