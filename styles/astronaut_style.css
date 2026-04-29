@@ -1,0 +1,76 @@
+
+/* ============================================ */
+/* 4) Astronauts Section */
+/* ============================================ */
+
+.astronauts_section {
+    margin-bottom: 80px;
+}
+
+.astronauts_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+    gap: 30px;
+}
+
+.astronaut_card {
+    background: #1A1F2A;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    cursor: pointer;
+}
+
+.astronaut_card:hover {
+    transform: translateY(-8px);
+    border-color: #00BFFF;
+    box-shadow: 0 15px 35px rgba(0, 191, 255, 0.15);
+}
+
+.astronaut_image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FF4D00;
+    transition: all 0.3s ease;
+}
+
+.astronaut_card:hover .astronaut_image {
+    border-color: #00BFFF;
+    transform: scale(1.02);
+}
+
+.astronaut_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.astronaut_name {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.astronaut_role {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #FF4D00;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.astronaut_description {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #A0AABF;
+    line-height: 1.5;
+}

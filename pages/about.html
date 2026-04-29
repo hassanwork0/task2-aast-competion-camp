@@ -1,51 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/topbar_style.css">
-    <link rel="stylesheet" href="../styles/about_style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/topbar_style.css" />
+    <link rel="stylesheet" href="../styles/about_style.css" />
+    <link rel="stylesheet" href="../styles/astronaut_style.css" />
 
     <script src="../scripts/loaders/load_top_bar.js"></script>
+    <script src="../scripts/loaders/load_about.js"></script>
     <title>About Us - Artemis II</title>
-</head>
+  </head>
 
-<body onload="loadTopBar('About')">
-        <header class="top_bar" id="top_bar"></header>
+  <body>
+    <header class="top_bar" id="top_bar"></header>
 
     <main class="about_container">
-        <div class="about_content">
-            <h1 class="about_title">Mission Awareness System</h1>
-            <p class="about_subtitle">Thank You for Exploring the Future with Us.</p>
+      <div class="about_content">
+        <h1 class="about_title">Mission Awareness System</h1>
+        <p class="about_subtitle">
+          Thank You for Exploring the Future with Us.
+        </p>
 
-            <div class="about_text">
-                <p>Artemis II is more than a voyage; it is a testament to human curiosity and the relentless pursuit of
-                    the unknown. This platform exists to bridge the gap between technical complexity and the visceral
-                    wonder of the cosmos.</p>
+        <div class="about_text">
+          <p>
+            Artemis II is more than a voyage; it is a testament to human
+            curiosity and the relentless pursuit of the unknown. This platform
+            exists to bridge the gap between technical complexity and the
+            visceral wonder of the cosmos.
+          </p>
 
-                <p>Our mission is to ensure that every milestone of this historic journey is accessible, transparent,
-                    and inspiring. We believe that by looking toward the stars, we gain a clearer perspective of our
-                    home on Earth.</p>
-            </div>
-
-            <div class="info_grid">
-                <div class="info_card">
-                    <div class="info_label">Latitude</div>
-                    <div class="info_value">28.5729° N</div>
-                </div>
-                <div class="info_card">
-                    <div class="info_label">Status</div>
-                    <div class="info_value status_operational">OPERATIONAL</div>
-                </div>
-                <div class="info_card">
-                    <div class="info_label">Destination</div>
-                    <div class="info_value">LUNAR ORBIT</div>
-                </div>
-            </div>
+          <p>
+            Our mission is to ensure that every milestone of this historic
+            journey is accessible, transparent, and inspiring. We believe that
+            by looking toward the stars, we gain a clearer perspective of our
+            home on Earth.
+          </p>
         </div>
+        <section class="astronauts_section">
+          <h2 class="section_title">Meet the Artemis II Crew</h2>
+          <div class="astronauts_grid">
+            <!-- Astronaut Card 1 -->
+            <div class="astronaut_card">
+              <div class="astronaut_image">
+                <img
+                  src="../assets/crew_photos/Reid Wiseman.webp"
+                  alt="Commander Reid Wiseman"
+                />
+              </div>
+              <h3 class="astronaut_name">Reid Wiseman</h3>
+              <p class="astronaut_role">Commander</p>
+              <p class="astronaut_description">
+                A veteran NASA astronaut and former Chief of the Astronaut
+                Office, leading the Artemis II mission.
+              </p>
+            </div>
+            <!-- Astronaut Card 2 -->
+            <div class="astronaut_card">
+              <div class="astronaut_image">
+                <img
+                  src="../assets/crew_photos/Victor Glover.webp"
+                  alt="Pilot Victor Glover"
+                />
+              </div>
+              <h3 class="astronaut_name">Victor Glover</h3>
+              <p class="astronaut_role">Pilot</p>
+              <p class="astronaut_description">
+                First Black astronaut to go on a lunar mission, bringing
+                extensive SpaceX Crew Dragon experience.
+              </p>
+            </div>
+            <!-- Astronaut Card 3 -->
+            <div class="astronaut_card">
+              <div class="astronaut_image">
+                <img
+                  src="../assets/crew_photos/Christina Koch.webp"
+                  alt="Mission Specialist Christina Koch"
+                />
+              </div>
+              <h3 class="astronaut_name">Christina Koch</h3>
+              <p class="astronaut_role">Mission Specialist</p>
+              <p class="astronaut_description">
+                Record holder for longest single spaceflight by a woman, now
+                heading to the Moon.
+              </p>
+            </div>
+            <!-- Astronaut Card 4 -->
+            <div class="astronaut_card">
+              <div class="astronaut_image">
+                <img
+                  src="../assets/crew_photos/Jeremy Hansen.webp"
+                  alt="Mission Specialist Jeremy Hansen"
+                />
+              </div>
+              <h3 class="astronaut_name">Jeremy Hansen</h3>
+              <p class="astronaut_role">Mission Specialist</p>
+              <p class="astronaut_description">
+                First Canadian astronaut to venture beyond low Earth orbit on a
+                lunar mission.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="info_grid">
+          <div class="info_card">
+            <div class="info_label">Latitude</div>
+            <div class="info_value">28.5729° N</div>
+          </div>
+          <div class="info_card">
+            <div class="info_label">Status</div>
+            <div class="info_value status_operational">OPERATIONAL</div>
+          </div>
+          <div class="info_card">
+            <div class="info_label">Destination</div>
+            <div class="info_value">LUNAR ORBIT</div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>

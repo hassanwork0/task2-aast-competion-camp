@@ -1,0 +1,41 @@
+.astronauts_CTA_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_card {
+    background: #1A1F2A;
+    border-radius: 16px;
+    padding: 0;
+    transition: border-color 0.2s ease;
+    border: 1px solid rgba(255, 77, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+}
+
+.cta_content {
+    padding: 20px;
+    flex: 1;
+}
+
+.cta_title {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.cta_description {
+    font-family: 'main_font', 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: #A0AABF;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}

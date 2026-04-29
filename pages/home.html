@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/topbar_style.css">
-    <link rel="stylesheet" href="../styles/home_style.css">
-    <link rel="stylesheet" href="../styles/news_style.css">
-        <link rel="stylesheet" href="../styles/footer_style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/topbar_style.css" />
+    <link rel="stylesheet" href="../styles/home_style.css" />
+    <link rel="stylesheet" href="../styles/news_style.css" />
+    <link rel="stylesheet" href="../styles/footer_style.css" />
+    <link rel="stylesheet" href="../styles/cta_style.css" />
+    <link rel="stylesheet" href="../styles/blog_style.css" />
 
     <script src="../scripts/loaders/load_home.js"></script>
     <script src="../scripts/loaders/load_top_bar.js"></script>
@@ -16,91 +18,69 @@
     <script src="../scripts/api/blog.js"></script>
 
     <title>Home - Artemis II</title>
-</head>
-<body onload="loadHome()">
+  </head>
+
+  <body>
     <!-- Note #1 make it header  -->
     <header class="top_bar" id="top_bar"></header>
     <!-- Main Home Content -->
     <main class="home_container">
-        
-        <!-- 1) Welcome Section -->
-        <section class="welcome_section">
-            <div class="welcome_content">
-                <h1 class="welcome_title">Welcome to Artemis II</h1>
-                <p class="welcome_subtitle">
-                    NASA's Artemis II mission will send four astronauts on a lunar flyby aboard the Orion spacecraft, 
-                    paving the way for future lunar surface landings and humanity's return to the Moon.
-                </p>
-                <div class="spaceship_image">
-                    <img src="../assets/orion.jpg" alt="Orion Spacecraft">
-                </div>
-            </div>
-        </section>
-
-        <!-- 2) Latest News Section -->
-        <section class="news_section">
-            <h2 class="section_title">Latest News</h2>
-            <div class="news_grid" id="newsGrid">
-              
-            </div>
-            <div class="button_container">
-                <button class="view_more_btn" onclick="window.location.href='news.html'">View More News →</button>
-            </div>
-        </section>
-
-        <!-- 3) Blogs Section -->
-        <section class="blogs_section">
-            <h2 class="section_title">Latest Blogs</h2>
-            <div class="blogs_list" id="blogsList">
-              
-                </div>
-            </div>
-        </section>
-
-        <!-- 4) Special Thanks - Astronauts Section -->
-        <section class="astronauts_section">
-            <h2 class="section_title">Meet the Artemis II Crew</h2>
-            <div class="astronauts_grid">
-                <!-- Astronaut Card 1 -->
-                <div class="astronaut_card">
-                    <div class="astronaut_image">
-                        <img src="../assets/crew_photos/Reid Wiseman.webp" alt="Commander Reid Wiseman">
-                    </div>
-                    <h3 class="astronaut_name">Reid Wiseman</h3>
-                    <p class="astronaut_role">Commander</p>
-                    <p class="astronaut_description">A veteran NASA astronaut and former Chief of the Astronaut Office, leading the Artemis II mission.</p>
-                </div>
-                <!-- Astronaut Card 2 -->
-                <div class="astronaut_card">
-                    <div class="astronaut_image">
-                        <img src="../assets/crew_photos/Victor Glover.webp" alt="Pilot Victor Glover">
-                    </div>
-                    <h3 class="astronaut_name">Victor Glover</h3>
-                    <p class="astronaut_role">Pilot</p>
-                    <p class="astronaut_description">First Black astronaut to go on a lunar mission, bringing extensive SpaceX Crew Dragon experience.</p>
-                </div>
-                <!-- Astronaut Card 3 -->
-                <div class="astronaut_card">
-                    <div class="astronaut_image">
-                        <img src="../assets/crew_photos/Christina Koch.webp" alt="Mission Specialist Christina Koch">
-                    </div>
-                    <h3 class="astronaut_name">Christina Koch</h3>
-                    <p class="astronaut_role">Mission Specialist</p>
-                    <p class="astronaut_description">Record holder for longest single spaceflight by a woman, now heading to the Moon.</p>
-                </div>
-                <!-- Astronaut Card 4 -->
-                <div class="astronaut_card">
-                    <div class="astronaut_image">
-                        <img src="../assets/crew_photos/Jeremy Hansen.webp" alt="Mission Specialist Jeremy Hansen">
-                    </div>
-                    <h3 class="astronaut_name">Jeremy Hansen</h3>
-                    <p class="astronaut_role">Mission Specialist</p>
-                    <p class="astronaut_description">First Canadian astronaut to venture beyond low Earth orbit on a lunar mission.</p>
-                </div>
-            </div>
-        </section>
-
+      <!-- 1) Welcome Section -->
+      <section class="welcome_section">
+        <div class="welcome_content">
+          <h1 class="welcome_title">Welcome to Artemis II</h1>
+          <p class="welcome_subtitle">
+            NASA's Artemis II mission will send four astronauts on a lunar flyby
+            aboard the Orion spacecraft, paving the way for future lunar surface
+            landings and humanity's return to the Moon.
+          </p>
+          <div class="spaceship_image">
+            <img src="../assets/orion.jpg" alt="Orion Spacecraft" />
+          </div>
+        </div>
+      </section>
     </main>
 
-</body>
+    <!-- 2) Latest News Section -->
+    <section class="news_section">
+      <h2 class="section_title">Latest News</h2>
+      <div class="news_grid" id="newsGrid"></div>
+      <div class="button_container">
+        <button
+          class="view_more_btn"
+          onclick="window.location.href = 'news.html'"
+        >
+          View More News →
+        </button>
+      </div>
+    </section>
+
+    <!-- 3) Blogs Section -->
+    <section class="blogs_section">
+      <h2 class="section_title">Latest Blogs</h2>
+      <div class="blogs_list" id="blogsList"></div>
+    </section>
+
+    <!-- 4) Special Thanks - Astronauts Section -->
+    <section class="astronauts_CTA_section">
+      <div class="cta_card">
+        <div class="cta_content">
+          <h3 class="cta_title">Know More About Our Crew</h3>
+          <p class="cta_description">
+            During the lunar flyby, Orion will collect crucial data about the
+            Moon's surface composition, gravitational field, and radiation
+            environment.
+          </p>
+        </div>
+        <div class="button_container">
+          <button
+            class="view_more_btn"
+            onclick="window.location.href = 'about.html'"
+          >
+            View More →
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

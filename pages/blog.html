@@ -1,69 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/topbar_style.css" />
+    <link rel="stylesheet" href="../styles/blog_style.css" />
+    <link rel="stylesheet" href="../styles/footer_style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/topbar_style.css">
-    <link rel="stylesheet" href="../styles/blog_style.css">
-    <link rel="stylesheet" href="../styles/footer_style.css">
     <script src="../scripts/loaders/load_top_bar.js"></script>
     <script src="../scripts/loaders/add_footer.js"></script>
     <script src="../scripts/api/blog.js"></script>
+    <script src="../scripts/loaders/load_blog.js"></script>
     <title>Blog - Artemis II</title>
-</head>
+  </head>
 
-<body onload="loadTopBar('Blog'); getFooter(); loadBlogs(10);loadPopularBlogs()">
+  <body>
     <header class="top_bar" id="top_bar"></header>
 
     <main class="blog_container">
-        <!-- 1) Welcome Blog Section -->
-        <section class="welcome_blog_section">
-            <div class="welcome_blog_content">
-                <h1 class="welcome_blog_title">Welcome to the Artemis II Blog</h1>
-                <p class="welcome_blog_subtitle">
-                    Explore in-depth articles, behind-the-scenes stories, and expert insights about humanity's return to the Moon. 
-                    From spacecraft technology to astronaut training, discover what it takes to make this historic mission possible.
-                </p>
-                <div class="welcome_blog_image">
-                    <img src="../assets/orion.jpg" alt="Orion Spacecraft" onerror="this.src='../assets/nasa_logo.svg'">
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Content Area with 2 Columns -->
-        <div class="blog_main_layout">
-            <!-- Left Column: Blog Cards -->
-            <div class="blog_left_column">
-                <h2 class="section_title">Latest Articles</h2>
-                <div class="blogs_list" id="blogsList">
-                    <!-- Dynamically loaded blog cards -->
-                </div>
-                <div class="button_container">
-                    <button class="load_more_blogs_btn" id="loadMoreBlogsBtn" onclick="loadMoreBlogs()">Load More Blogs →</button>
-                </div>
-            </div>
-
-            <!-- Right Column: Sidebar -->
-            <div class="blog_right_sidebar">
-                <!-- Most Popular Blogs -->
-                <div class="sidebar_card">
-                    <h3 class="sidebar_title">Most Popular</h3>
-                    <div class="popular_list" id="popularList">
-                        <!-- Dynamically loaded popular blogs -->
-                    </div>
-                </div>
-
-                <!-- Create Blog Button -->
-                <div class="sidebar_card">
-                    <button class="create_blog_btn" onclick="window.location.href='create-blog.html'">+ Create New Blog</button>
-                </div>
-            </div>
+      <!-- 1) Welcome Blog Section -->
+      <section class="welcome_blog_section">
+        <div class="welcome_blog_content">
+          <h1 class="welcome_blog_title">Welcome to the Artemis II Blog</h1>
+          <p class="welcome_blog_subtitle">
+            Explore in-depth articles, behind-the-scenes stories, and expert
+            insights about humanity's return to the Moon. From spacecraft
+            technology to astronaut training, discover what it takes to make
+            this historic mission possible.
+          </p>
+          <div class="welcome_blog_image">
+            <img
+              src="../assets/orion.jpg"
+              alt="Orion Spacecraft"
+              onerror="this.src = '../assets/nasa_logo.svg'"
+            />
+          </div>
         </div>
+      </section>
+
+      <!-- Main Content Area with 2 Columns -->
+      <div class="blog_main_layout">
+        <!-- Left Column: Blog Cards -->
+        <div class="blog_left_column">
+          <h2 class="section_title">Latest Articles</h2>
+          <div class="blogs_list" id="blogsList">
+            <!-- Dynamically loaded blog cards -->
+          </div>
+          <div class="button_container">
+            <button
+              class="load_more_blogs_btn"
+              id="loadMoreBlogsBtn"
+              onclick="loadMoreBlogs()"
+            >
+              Load More Blogs →
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Sidebar -->
+        <div class="blog_right_sidebar">
+          <!-- Most Popular Blogs -->
+          <div class="sidebar_card">
+            <h3 class="sidebar_title">Most Popular</h3>
+            <div class="popular_list" id="popularList">
+              <!-- Dynamically loaded popular blogs -->
+            </div>
+          </div>
+
+          <!-- Create Blog Button -->
+          <div class="sidebar_card">
+            <button
+              class="create_blog_btn"
+              onclick="window.location.href = 'create-blog.html'"
+            >
+              + Create New Blog
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer id="footer"></footer>
-</body>
-
+  </body>
 </html>
