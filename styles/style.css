@@ -1,47 +1,46 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(135deg, #0B0E17 0%, #172656 100%);
-    color: white;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(135deg, #0b0e17 0%, #172656 100%);
+  color: white;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .section_title {
-    font-family: 'main_font', 'Inter', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 40px;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    width: 100%;
+  font-family: "main_font", "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 .section_title::after {
-    margin: auto ;
+  margin: auto;
 }
 
 /* Optional: Keep hover effect for better UX */
 a:hover {
-    color: #FF4D00;
-}
-@font-face {
-    font-family: 'logo_font';
-    src: url('../assets/fonts/logo_font.otf') format('opentype');
+  color: #ff4d00;
 }
 
 @font-face {
-    font-family: 'main_font';
-    src: url('../assets/fonts/main_font.ttf') format('opentype');
+  font-family: "logo_font";
+  src: url("../assets/fonts/logo_font.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "main_font";
+  src: url("../assets/fonts/main_font.ttf") format("opentype");
 }

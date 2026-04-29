@@ -2,61 +2,59 @@
 
 /* Global Styles for Home Page */
 .home_container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
-
-
 
 /* ============================================ */
 /* 1) Welcome Section */
 /* ============================================ */
 
 .welcome_section {
-    background: linear-gradient(135deg, #0B0E17 0%, #131724 100%);
-    border-radius: 30px;
-    padding: 60px 40px;
-    margin-bottom: 80px;
-    text-align: center;
-    border: 1px solid rgba(255, 77, 0, 0.2);
+  background: linear-gradient(135deg, #0b0e17 0%, #131724 100%);
+  border-radius: 30px;
+  padding: 60px 40px;
+  margin-bottom: 80px;
+  text-align: center;
+  border: 1px solid rgba(255, 77, 0, 0.2);
 }
 
 .welcome_title {
-    font-family: 'logo_font', 'Inter', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #FFFFFF 0%, #FF4D00 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 20px;
+  font-family: "logo_font", "Inter", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #ff4d00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
 }
 
 .welcome_subtitle {
-    font-family: 'main_font', 'Inter', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #A0AABF;
-    max-width: 800px;
-    margin: 0 auto 40px;
+  font-family: "main_font", "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #a0aabf;
+  max-width: 800px;
+  margin: 0 auto 40px;
 }
 
 .spaceship_image {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .spaceship_image img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
 .spaceship_image img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* ============================================ */
@@ -64,48 +62,45 @@
 /* ============================================ */
 
 @media (max-width: 700px) {
-    .home_container {
-        padding: 20px 15px;
-    }
+  .home_container {
+    padding: 20px 15px;
+  }
 
-    .welcome_section {
-        padding: 40px 20px;
-    }
+  .welcome_section {
+    padding: 40px 20px;
+  }
 
-    .welcome_title {
-        font-size: 2.2rem;
-    }
+  .welcome_title {
+    font-size: 2.2rem;
+  }
 
-    .welcome_subtitle {
-        font-size: 1rem;
-    }
+  .welcome_subtitle {
+    font-size: 1rem;
+  }
 
-    .section_title {
-        font-size: 2rem;
-    }
+  .section_title {
+    font-size: 2rem;
+  }
 
-    .news_grid {
-        grid-template-columns: 1fr;
-    }
+  .news_grid {
+    grid-template-columns: 1fr;
+  }
 
-    .astronauts_grid {
-        grid-template-columns: 1fr;
-    }
+  .astronauts_grid {
+    grid-template-columns: 1fr;
+  }
 
-    .blog_row {
-        padding: 20px;
-    }
+  .blog_row {
+    padding: 20px;
+  }
 
-    .blog_title {
-        font-size: 1.2rem;
-    }
-
+  .blog_title {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .welcome_title {
-        font-size: 1.8rem;
-    }
-
-
+  .welcome_title {
+    font-size: 1.8rem;
+  }
 }
